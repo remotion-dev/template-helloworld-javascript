@@ -8,6 +8,10 @@
 
 Welcome to your Remotion project!
 
+## Errors
+
+If there is any errors make sure to run `npm upgrade`. It should fix the error.
+
 ## Commands
 
 **Start Preview**
