@@ -22,7 +22,7 @@ export const Subtitle = () => {
 					color: COLOR_1,
 				}}
 			>
-				src/Video.tsx
+				src/Video.jsx
 			</code>{' '}
 			and save to reload.
 		</div>
