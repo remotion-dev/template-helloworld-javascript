@@ -20,10 +20,10 @@ const app = express();
 const port = process.env.PORT || 8000;
 const compositionId = 'HelloWorld';
 
-const cache = new Map<string, string>();
+const cache = new Map();
 
 app.get('/', async (req, res) => {
-	const sendFile = (file: string) => {
+	const sendFile = (file) => {
 		fs.createReadStream(file)
 			.pipe(res)
 			.on('close', () => {
@@ -32,10 +32,10 @@ app.get('/', async (req, res) => {
 	};
 	try {
 		if (cache.get(JSON.stringify(req.query))) {
-			sendFile(cache.get(JSON.stringify(req.query)) as string);
+			sendFile(cache.get(JSON.stringify(req.query)));
 			return;
 		}
-		const bundled = await bundle(path.join(__dirname, './src/index.tsx'));
+		const bundled = await bundle(path.join(process.cwd(), './src/index.jsx'));
 		const comps = await getCompositions(bundled);
 		const video = comps.find((c) => c.id === compositionId);
 		if (!video) {
