@@ -24,10 +24,10 @@ export const HelloWorld = ({titleText, titleColor}) => {
 				<Sequence from={0} durationInFrames={videoConfig.durationInFrames}>
 					<Logo transitionStart={transitionStart} />
 				</Sequence>
-				<Sequence from={transitionStart + 10} durationInFrames={Infinity}>
+				<Sequence from={transitionStart + 10} >
 					<Title titleText={titleText} titleColor={titleColor} />
 				</Sequence>
-				<Sequence from={transitionStart + 50} durationInFrames={Infinity}>
+				<Sequence from={transitionStart + 50} >
 					<Subtitle />
 				</Sequence>
 			</div>
