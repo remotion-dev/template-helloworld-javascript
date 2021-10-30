@@ -25,5 +25,5 @@ jobs:
           WORKFLOW_INPUT: ${{ toJson(github.event.inputs) }}
       - uses: actions/upload-artifact@v2
         with:
-          name: out.mp4
-          path: out.mp4
+          name: out
+          path: out/video.mp4
