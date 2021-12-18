@@ -4,7 +4,7 @@
 	"description": "My Remotion video",
 	"scripts": {
 		"start": "remotion preview src/index.jsx",
-		"build": "remotion render src/index.jsx HelloWorld out.mp4",
+		"build": "remotion render src/index.jsx HelloWorld out/video.mp4",
 		"upgrade": "remotion upgrade",
 		"server": "node server.mjs",
 		"test": "eslint src --ext ts,tsx,js,jsx"
