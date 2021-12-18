@@ -12,15 +12,15 @@
 	"repository": {},
 	"license": "UNLICENSED",
 	"dependencies": {
-		"@remotion/bundler": "^2.0.0",
-		"@remotion/cli": "^2.0.0",
-		"@remotion/eslint-config": "^2.0.0",
-		"@remotion/renderer": "^2.0.0",
+		"@remotion/bundler": "^2.3.2",
+		"@remotion/cli": "^2.3.2",
+		"@remotion/eslint-config": "^2.3.2",
+		"@remotion/renderer": "^2.3.2",
 		"eslint": "^7.15.0",
 		"express": "^4.17.1",
 		"prettier": "^2.2.1",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
-		"remotion": "^2.0.0"
+		"remotion": "^2.3.2"
 	}
 }
