@@ -6,21 +6,19 @@
 		"start": "remotion preview src/index.jsx",
 		"build": "remotion render src/index.jsx HelloWorld out/video.mp4",
 		"upgrade": "remotion upgrade",
-		"server": "node server.mjs",
 		"test": "eslint src --ext ts,tsx,js,jsx"
 	},
 	"repository": {},
 	"license": "UNLICENSED",
 	"dependencies": {
-		"@remotion/bundler": "^2.3.2",
-		"@remotion/cli": "^2.3.2",
-		"@remotion/eslint-config": "^2.3.2",
-		"@remotion/renderer": "^2.3.2",
-		"eslint": "^7.15.0",
-		"express": "^4.17.1",
-		"prettier": "^2.2.1",
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
-		"remotion": "^2.3.2"
+		"@remotion/bundler": "^3.0.0",
+		"@remotion/cli": "^3.0.0",
+		"@remotion/eslint-config": "^3.0.0",
+		"@remotion/renderer": "^3.0.0",
+		"eslint": "^8.14.0",
+		"prettier": "^2.6.2",
+		"react": "^18.0.0",
+		"react-dom": "^18.0.0",
+		"remotion": "^3.0.0"
 	}
 }
