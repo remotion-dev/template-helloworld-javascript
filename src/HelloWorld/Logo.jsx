@@ -1,8 +1,14 @@
-import {interpolate, spring, useCurrentFrame, useVideoConfig} from 'remotion';
+import {
+	AbsoluteFill,
+	interpolate,
+	spring,
+	useCurrentFrame,
+	useVideoConfig,
+} from 'remotion';
 import {Arc} from './Arc';
 import {Atom} from './Atom';
 
-export const Logo = ({transitionStart}) => {
+export const Logo = () => {
 	const videoConfig = useVideoConfig();
 	const frame = useCurrentFrame();
 
@@ -24,28 +30,13 @@ export const Logo = ({transitionStart}) => {
 		frame,
 	});
 
-	const scaleIn = spring({
+	const scale = spring({
 		frame,
 		config: {
 			mass: 0.5,
 		},
 		fps: videoConfig.fps,
 	});
-
-	const translation = interpolate(
-		spring({
-			frame: frame - transitionStart,
-			fps: videoConfig.fps,
-			config: {
-				damping: 100,
-				mass: 0.5,
-			},
-		}),
-		[0, 1],
-		[0, -150]
-	);
-
-	const scale = frame < 50 ? scaleIn : 1;
 
 	const logoRotation = interpolate(
 		frame,
@@ -54,12 +45,9 @@ export const Logo = ({transitionStart}) => {
 	);
 
 	return (
-		<div
+		<AbsoluteFill
 			style={{
-				position: 'absolute',
-				width: videoConfig.width,
-				height: videoConfig.height,
-				transform: `scale(${scale}) translateY(${translation}px) rotate(${logoRotation}deg)`,
+				transform: `scale(${scale}) rotate(${logoRotation}deg)`,
 			}}
 		>
 			<Arc
@@ -78,6 +66,6 @@ export const Logo = ({transitionStart}) => {
 				progress={development}
 			/>
 			<Atom scale={rotationDevelopment} />
-		</div>
+		</AbsoluteFill>
 	);
 };
