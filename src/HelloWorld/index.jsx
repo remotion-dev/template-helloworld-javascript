@@ -6,9 +6,9 @@ import {
 	useCurrentFrame,
 	useVideoConfig,
 } from 'remotion';
-import {Logo} from './HelloWorld/Logo';
-import {Subtitle} from './HelloWorld/Subtitle';
-import {Title} from './HelloWorld/Title';
+import {Logo} from './Logo';
+import {Subtitle} from './Subtitle';
+import {Title} from './Title';
 
 export const HelloWorld = ({titleText, titleColor}) => {
 	const frame = useCurrentFrame();
