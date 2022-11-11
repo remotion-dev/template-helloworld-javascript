@@ -4,7 +4,7 @@ import {Logo} from './HelloWorld/Logo';
 
 // Each <Composition> is an entry in the sidebar!
 
-export const RemotionVideo = () => {
+export const RemotionRoot = () => {
 	return (
 		<>
 			<Composition

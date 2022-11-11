@@ -3,8 +3,8 @@
 	"version": "1.0.0",
 	"description": "My Remotion video",
 	"scripts": {
-		"start": "remotion preview src/index.jsx",
-		"build": "remotion render src/index.jsx HelloWorld out/video.mp4",
+		"start": "remotion preview src/index.js",
+		"build": "remotion render src/index.js HelloWorld out/video.mp4",
 		"upgrade": "remotion upgrade",
 		"test": "eslint src --ext ts,tsx,js,jsx"
 	},
