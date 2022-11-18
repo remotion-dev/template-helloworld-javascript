@@ -20,7 +20,7 @@ export const Subtitle: React.FC = () => {
 	const opacity = interpolate(frame, [0, 30], [0, 1]);
 	return (
 		<div style={{...subtitle, opacity}}>
-			Edit <code style={codeStyle}>src/Video.jsx</code> and save to reload.
+			Edit <code style={codeStyle}>src/Root.jsx</code> and save to reload.
 		</div>
 	);
 };
