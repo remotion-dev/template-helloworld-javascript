@@ -18,7 +18,6 @@ export const RemotionRoot = () => {
 				height={1080}
 				// You can override these props for each render:
 				// https://www.remotion.dev/docs/parametrized-rendering
-				schema={myCompSchema}
 				defaultProps={{
 					titleText: 'Welcome to Remotion',
 					titleColor: 'black',

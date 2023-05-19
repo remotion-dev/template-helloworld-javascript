@@ -9,13 +9,6 @@ import {
 import {Logo} from './Logo';
 import {Subtitle} from './Subtitle';
 import {Title} from './Title';
-import {z} from 'zod';
-import {zColor} from '@remotion/zod-types';
-
-export const myCompSchema = z.object({
-	titleText: z.string(),
-	titleColor: zColor(),
-});
 
 export const HelloWorld = ({titleText, titleColor}) => {
 	const frame = useCurrentFrame();
