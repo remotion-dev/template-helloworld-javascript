@@ -41,6 +41,10 @@ npm run upgrade
 
 Get started with Remotion by reading the [fundamentals page](https://www.remotion.dev/docs/the-fundamentals).
 
+## Help
+
+We provide help on our [Discord server](https://discord.gg/6VzzNDwUwV).
+
 ## Issues
 
 Found an issue with Remotion? [File an issue here](https://github.com/JonnyBurger/remotion/issues/new).
