@@ -2,7 +2,7 @@ import React from 'react';
 import {interpolate, useCurrentFrame} from 'remotion';
 import {COLOR_1, FONT_FAMILY} from './constants';
 
-const subtitle: React.CSSProperties = {
+const subtitle = {
 	fontFamily: FONT_FAMILY,
 	fontSize: 40,
 	textAlign: 'center',
@@ -11,11 +11,11 @@ const subtitle: React.CSSProperties = {
 	width: '100%',
 };
 
-const codeStyle: React.CSSProperties = {
+const codeStyle = {
 	color: COLOR_1,
 };
 
-export const Subtitle: React.FC = () => {
+export const Subtitle = () => {
 	const frame = useCurrentFrame();
 	const opacity = interpolate(frame, [0, 30], [0, 1]);
 	return (

@@ -2,7 +2,7 @@ import React from 'react';
 import {spring, useCurrentFrame, useVideoConfig} from 'remotion';
 import {FONT_FAMILY} from './constants';
 
-const title: React.CSSProperties = {
+const title = {
 	fontFamily: FONT_FAMILY,
 	fontWeight: 'bold',
 	fontSize: 100,
@@ -12,7 +12,7 @@ const title: React.CSSProperties = {
 	width: '100%',
 };
 
-const word: React.CSSProperties = {
+const word = {
 	marginLeft: 10,
 	marginRight: 10,
 	display: 'inline-block',
