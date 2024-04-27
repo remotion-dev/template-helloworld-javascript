@@ -41,7 +41,7 @@ export const Logo = () => {
 	const logoRotation = interpolate(
 		frame,
 		[0, videoConfig.durationInFrames],
-		[0, 360]
+		[0, 360],
 	);
 
 	return (

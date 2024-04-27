@@ -27,7 +27,7 @@ export const HelloWorld = ({titleText, titleColor}) => {
 	const logoTranslation = interpolate(
 		logoTranslationProgress,
 		[0, 1],
-		[0, -150]
+		[0, -150],
 	);
 
 	// Fade out the animation at the end
@@ -38,7 +38,7 @@ export const HelloWorld = ({titleText, titleColor}) => {
 		{
 			extrapolateLeft: 'clamp',
 			extrapolateRight: 'clamp',
-		}
+		},
 	);
 
 	// A <AbsoluteFill> is just a absolutely positioned <div>!
