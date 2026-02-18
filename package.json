@@ -19,7 +19,7 @@
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "^4.0.0",
-    "prettier": "3.6.0",
+    "prettier": "3.8.1",
     "eslint": "9.19.0"
   },
   "private": true
