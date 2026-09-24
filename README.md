@@ -1,3 +1,5 @@
+> Note: This template is discontinued will not be updated anymore. See remotion.dev/templates for actively maintained templates
+
 # Remotion video
 
 <p align="center">
